@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Đăng Nhập</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
+<script type="text/javascript" src="../JS/jquery.validate.js"></script>
+<script type="text/javascript" src="../JS/jquery-2.1.4.js"></script>
+</head>
+
+<body class="container" style="background-image:url(../IMG/hinh-nen-nhung-cuon-sach-dep-cho-may-tinh-1.jpg); height:100%">
+	<h1 class="text-center text-success" style="color:yellowgreen">Đăng Nhập</h1>
+    <form class="form-horizontal">
+    	<div class=" form-group">
+            <label class="col-md-4 text-right" style="color:yellowgreen">Tên Đăng Nhập:</label>
+            <div class="col-md-5">
+            	<input type="text" id="txtTenDangNhap" class="form-control" placeholder="Tên Đăng Nhập..."/>
+            </div>
+            <span class="text-warning" id="tdn" style="color:yellowgreen"></span>
+        </div>
+        <div class=" form-group">
+            <label class="col-md-4 text-right" style="color:yellowgreen">Mật Khẩu:</label>
+            <div class="col-md-5">
+            	<input type="text" id="txtMatKhau" class="form-control" placeholder="Mật Khẩu..."/>
+            </div>
+            <span class="text-warning" id="mk" style="color:yellowgreen"></span>
+        </div>
+        <div class=" form-group text-center">
+        <input type="button" id="txtTenDangNhap" value="Đăng Nhập" class="btn btn-primary " onclick="KtDangNhap();"/>
+    		<a href="DangKy.html"><input type="button" id="txtDangKy" value="Đăng ký"  class="btn btn-primary " onclick=""/></a>
+             
+        </div>  
+    </form>   
+<script type="text/javascript" src="../JS/KT.js"></script>
+</body>
+</html>

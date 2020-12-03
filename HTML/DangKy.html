@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Đăng Ký</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css"/>
+<script type="text/javascript" src="../JS/jquery.validate.js"></script>
+<script type="text/javascript" src="../JS/jquery-2.1.4.js"></script>
+<style>
+	
+</style>
+</head>
+
+<body style="background-image:url(../IMG/hinh-nen-nhung-cuon-sach-dep-cho-may-tinh-1.jpg); height:100%">
+	<div class="container">
+		<h1 class="text-center text-warning" style="color:yellowgreen">Đăng Ký</h1>
+        <form class="form-horizontal">
+    	<div class=" form-group">
+            <label class="col-md-4 text-right" style="color:yellowgreen">Tên Đăng Nhập:</label>
+            <div class="col-md-5">
+            	<input type="text" id="txtTenDangNhap" class="form-control" placeholder="Tên Đăng Nhập..."/>
+            </div>
+            <span class="text-warning" id="tdn" style="color:yellowgreen"></span>
+        </div>
+        <div class=" form-group">
+            <label class="col-md-4 text-right" style="color:yellowgreen">Mật Khẩu:</label>
+            <div class="col-md-5">
+            	<input type="password" id="txtMatKhau" class="form-control" placeholder="Mật Khẩu..."/>
+            </div>
+            <span class="text-warning" id="mk" style="color:yellowgreen"></span>
+        </div>
+        <div class=" form-group">
+            <label class="col-md-4 text-right" style="color:yellowgreen">Nhập lại Mật Khẩu:</label>
+            <div class="col-md-5">
+            	<input type="password" id="txtnlmk" class="form-control" />
+            </div>
+            <span class="text-warning" id="nlmk" style="color:yellowgreen"></span>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 text-right" style="color:yellowgreen">Email:</label>
+            <div class="col-md-5">
+            	<input type="text" id="txtEmail" class="form-control" placeholder="Email..."/>
+            </div>
+            <span class="text-warning" id="email" style="color:yellowgreen"></span>
+        </div>
+        <div class=" form-group">
+            <label class="col-md-4 text-right" style="color:yellowgreen">Số điện thoại:</label>
+            <div class="col-md-5">
+            	<input type="text" id="txtsdt" class="form-control" placeholder="0123456789"/>
+            </div>
+            <span class="text-warning" id="sdt" style="color:yellowgreen"></span>
+        </div>
+        
+        <div class=" form-group text-center">
+        <input type="button" value="Đăng Ký Tài Khoản" class="btn btn-primary " onclick="KtDangKy();"/>
+    		<input type="button" value="Hủy bỏ" class="btn btn-primary " onclick="Xoa()"/>
+        </div> 
+        </div> 
+    </form>
+    </div>
+   <script>
+   	function Xoa()
+	{
+		document.getElementById("txtTenDangNhap").value = "";
+		document.getElementById("txtMatKhau").value = "";
+		document.getElementById("txtnlmk").value = "";
+		document.getElementById("txtEmail").value = "";
+		document.getElementById("txtsdt").value = "";
+	}
+   </script>
+<script type="text/javascript" src="../JS/KT.js"></script>   
+</body>
+</html>

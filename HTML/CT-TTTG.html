@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOK</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fontmenu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/detail.css">
+    <style>
+		*{margin:0px; padding:0px;}
+		
+	</style>
+</head>
+<body onload = "JS()"> 
+	<div class="container-fluid" style="width:1200px;">
+        <header style="height:180px;"> 
+            <div class="col-sm-3">
+                <a href="Home.html"><img src="../IMG/logo.png" class="logo"></a>          
+            </div>
+            <div class="col-sm-6" style="margin-top:40px; height:86px">
+                <form>
+                    <input type="text" name="" placeholder="Sách cần tìm...">
+                    <input type="submit" name="" value="Seacrh">
+                </form>    
+            </div> 
+            <div class="col-sm-3" style="height:126px;">  
+                <a href="./FormDN.html" class="btn btn-primary" style="margin-top: 50px">Đăng nhập</a>
+                <a href="./FormDK.html"class="btn btn-primary" style="margin-top: 50px">Đăng Kí</a>        
+            </div>
+            <div class="col-sm-12" style="height:40px; margin-left: 150px;">
+            	<ul id="menu"> 
+                <li> <a href="Home.html"> TRANG CHỦ </a> </li>
+                <li> <a href="./GioiThieu.html"> GIỚI THIỆU </a> </li>
+                <li> <a href="./ThanhToan.html"> HÌNH THỨC THANH TOÁN </a></li>
+                <li> <a href="./LienHe.html"> LIÊN HỆ </a> </li>
+                <li> <a href="./PhuongThucGH.html"> PHƯƠNG THỨC GIAO HÀNG </a> </li>
+              </ul>
+            </div>
+       </header>
+       <div>
+         <section style="font-family: 'Dosis', sans-serif; margin-top:10px" class="col-sm-3 modal-content">
+            <div class="menu">
+              <div id="menu-container">
+                <ul class="menu-list accordion">
+                  <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="VHXH.html">Văn hóa-Xã hội</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KHXH.html">+ Khoa học xã hội</a></li>
+                    <li><a class="head" href="GD.html">+ Giáo dục</a></li>
+                    <li><a class="head" href="CTPL.html">+ Chính trị-Pháp luật</a></li>
+                  </ul>
+                  <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Nhân vật-Sự kiện</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NV.html">+ Nhân vật</a></li>
+                    <li><a class="head" href="SK.html">+ Sự kiện</a></li>
+                  </ul>
+                  <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Khoa học-Công nghệ</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KTCN.html">+ Kỹ thuật-Công nghệ</a></li>
+                    <li><a class="head" href="KTKH.html">+ Kiến thức khoa học</a></li>
+                  </ul>
+                  <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn học</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="TTV.html">+ Thơ-Tản văn</a></li>
+                    <li><a class="head" href="TDTT.html">+ Truyện dài-Tiểu thuyết</a></li>
+                    <li><a class="head" href="KH.html">+ Kiếm hiệp</a></li>
+                    <li><a class="head" href="TN.html">+ Truyện ngắn</a></li>
+                  </ul>
+                  <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Kỹ năng</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NTS.html">+ Nghệ thuật sống</a></li>
+                    <li><a class="head" href="KNLV.html">+ Kỹ năng làm việc</a></li>
+                    <li><a class="head" href="KNS.html">+ Kỹ năng sống</a></li>
+                    <li><a class="head" href="HN.html">+ Hướng nghiệp</a></li>
+                  </ul>
+                </ul>    
+              </div>
+            </div>
+         </section>
+         <div class="col-sm-9 modal-content" style="margin-top:10px;">
+          <h1 id="chitiet"> Chi Tiết Sách </h1>
+          <hr style="margin-top: 48px;">
+          <br/>
+          <div class="col-sm-4">
+            <img src="../IMG/BOOK/Văn hóa-Xã hội/Chính trị-Pháp luật/trat tu the gioi.jpg" class="imgbook">
+          </div>
+          <div class="col-sm-8">
+            <h2 style="font-weight: bold;">Trật tự thế giới</h2>
+            <p>Tác giả: Henry Kissinger</p>
+            <p>Thể loại: Chính trị - Pháp luật</p> 
+            <p>Nhà xuất bản: NXB Thế Giới</p>  
+            <p>Ngày cập nhật:  12/07/2017</p>
+            <p>Giá: <font color="red" size="5">50.000 <sup>VND</sup></font></p>
+            <button 
+                type="button" title="Chọn Mua" class="btn btn-danger" onclick="DatHang();"> 
+                <span style="font-size:20px"> Mua Hàng </span> 
+            </button>
+            <br/><br/>
+            <p>
+                Trong tác phẩm <b>Trật Tự Thế Giới, Kissinger</b> xuất phát từ Hòa ước Westphalia để phân tích về tương quan giữa các nước, chủ yếu là các cường quốc và các khu vực giữ một vai trò đặc biệt đối với bức tranh địa chính trị thế giới, với những khác biệt trong thế giới quan và vị trí địa lý đã ảnh hưởng đến chính sách ngoại giao của mỗi nước như thế nào. Tác giả dành chương cuối (chương 9) để bàn về vấn đề toàn cầu hoá trong thời đại khoa học công nghệ, đặc biệt là tin học và truyền thông đại chúng lan tràn đã tác động mạnh mẽ đến dư luận, các nhà lãnh đạo và các quyết định chính trị hiện nay.
+</br>
+Theo cách nhìn của Kissinger thì trật tự thế giới ngày nay cần được đặt trên hai yếu tố căn bản:
+</br>
+1. Nguyên tắc tôn trọng chủ quyền của mỗi quốc gia có tính chính danh dựa trên căn bản của các hiệp ước và tổ chức quốc tế;
+</br>
+2. Và để đảm bảo duy trì hòa bình và ổn định trên thế giới cũng như các khu vực, cần phải dựa trên một sự cân bằng quyền lực mà chủ yếu phụ thuộc vào các cường quốc thế giới và khu vực.
+</br>
+Để có một trật tự quốc tế tồn tại và bền vững, Kissinger cho rằng nó phải liên quan đến "quyền lực có tính chính danh." Tới cuối cùng, Kissinger, con người thực tế và nổi tiếng, lại có vẻ duy tâm đến mức ngạc nhiên. Thậm chí khi có những sự xung đột giữa các giá trị Mỹ và các mục tiêu khác, ông khích lệ chúng ta hãy tiếp tục đứng lên vì những giá trị đó, không lẩn tránh; đi đầu trong việc trợ giúp các quốc gia dân tộc, các lực lượng chính danh, chứ không chỉ các chính phủ đơn độc, nếu những sự trợ giúp ấy đảm bảo cho cán cân quyền lực có thể chống đỡ trật tự quốc tế, cũng như những giá trị và nguyên tắc của chúng ta có thể được những người khác chấp nhận và hấp dẫn họ. - Hillary Clinton</br>
+                
+                Mời các bạn đón đọc!
+            </p>
+            <hr>
+          </div>
+        </div>
+      </div>
+         <footer class="col-sm-12 modal-content" style="width:1170px; margin: 10px auto;">
+            <div class="col-sm-12" id="line"></div>
+             <div class="col-sm-4">
+               <p class="textfooter">THÔNG TIN LIÊN HỆ</p>
+               <p>Công ty TNHH My Life</p>
+               <p>06 Lê Lợi, phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+               <p>Tel: 0935027834</p>
+               <p>Email:support@mylife.vn</p>
+             </div>
+             <div class="col-sm-3">
+               <p class="textfooter">ĐỐI TÁC VẬN CHUYỂN</p>
+               <img src="../IMG/vn-post.jpg">
+               <br/><br/>
+               <img src="../IMG/dhl.jpg">
+             </div>
+             <div class="col-sm-2">
+               <p class="textfooter">ĐỐI TÁC BÁN HÀNG</p>
+               <img src="../IMG/lazada.jpg">
+               <br/><br/>
+               <img src="../IMG/shopee.jpg">
+               <br/><br/>
+               <img src="../IMG/amazon.jpg">
+             </div>
+             <div class="col-sm-3">
+                 <br/><br/>
+               <img src="../IMG/logo_so_cong_thuong.png">
+             </div>
+          </footer>
+    </div> 
+    <script language="JavaScript" src="../JS/jquery.min.js"> </script>
+    <script language="JavaScript" src="../JS/Menu.js"> </script>    
+</body>
+</html>

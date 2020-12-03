@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOK</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fontmenu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/detail.css">
+    <style>
+		*{margin:0px; padding:0px;}
+		
+	</style>
+</head>
+<body onload = "JS()"> 
+	<div class="container-fluid" style="width:1200px;">
+        <header style="height:180px;"> 
+            <div class="col-sm-3">
+                <a href="Home.html"><img src="../IMG/logo.png" class="logo"></a>          
+            </div>
+            <div class="col-sm-6" style="margin-top:40px; height:86px">
+                <form>
+                    <input type="text" name="" placeholder="Sách cần tìm...">
+                    <input type="submit" name="" value="Seacrh">
+                </form>    
+            </div> 
+            <div class="col-sm-3" style="height:126px;">  
+                <a href="./FormDN.html" class="btn btn-primary" style="margin-top: 50px">Đăng nhập</a>
+                <a href="./FormDK.html"class="btn btn-primary" style="margin-top: 50px">Đăng Kí</a>        
+            </div>
+            <div class="col-sm-12" style="height:40px; margin-left: 150px;">
+            	<ul id="menu"> 
+                <li> <a href="Home.html"> TRANG CHỦ </a> </li>
+                <li> <a href="./GioiThieu.html"> GIỚI THIỆU </a> </li>
+                <li> <a href="./ThanhToan.html"> HÌNH THỨC THANH TOÁN </a></li>
+                <li> <a href="./LienHe.html"> LIÊN HỆ </a> </li>
+                <li> <a href="./PhuongThucGH.html"> PHƯƠNG THỨC GIAO HÀNG </a> </li>
+              </ul>
+            </div>
+       </header>
+       <div>
+         <section style="font-family: 'Dosis', sans-serif; margin-top:10px" class="col-sm-3 modal-content">
+            <div class="menu">
+              <div id="menu-container">
+                <ul class="menu-list accordion">
+                  <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="VHXH.html">Văn hóa-Xã hội</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KHXH.html">+ Khoa học xã hội</a></li>
+                    <li><a class="head" href="GD.html">+ Giáo dục</a></li>
+                    <li><a class="head" href="CTPL.html">+ Chính trị-Pháp luật</a></li>
+                  </ul>
+                  <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Nhân vật-Sự kiện</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NV.html">+ Nhân vật</a></li>
+                    <li><a class="head" href="SK.html">+ Sự kiện</a></li>
+                  </ul>
+                  <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Khoa học-Công nghệ</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KTCN.html">+ Kỹ thuật-Công nghệ</a></li>
+                    <li><a class="head" href="KTKH.html">+ Kiến thức khoa học</a></li>
+                  </ul>
+                  <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn học</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="TTV.html">+ Thơ-Tản văn</a></li>
+                    <li><a class="head" href="TDTT.html">+ Truyện dài-Tiểu thuyết</a></li>
+                    <li><a class="head" href="KH.html">+ Kiếm hiệp</a></li>
+                    <li><a class="head" href="TN.html">+ Truyện ngắn</a></li>
+                  </ul>
+                  <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Kỹ năng</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NTS.html">+ Nghệ thuật sống</a></li>
+                    <li><a class="head" href="KNLV.html">+ Kỹ năng làm việc</a></li>
+                    <li><a class="head" href="KNS.html">+ Kỹ năng sống</a></li>
+                    <li><a class="head" href="HN.html">+ Hướng nghiệp</a></li>
+                  </ul>
+                </ul>    
+              </div>
+            </div>
+         </section>
+         <div class="col-sm-9 modal-content" style="margin-top:10px;">
+          <h1 id="chitiet"> Chi Tiết Sách </h1>
+          <hr style="margin-top: 48px;">
+          <br/>
+          <div class="col-sm-4">
+            <img src="../IMG/BOOK/Khoa học-Công nghệ/kien thuc khoa hoc/cam nang scrum cho nguoi moi bat dau.jpg" class="imgbook">
+          </div>
+          <div class="col-sm-8">
+            <h2 style="font-weight: bold;">Cẩm nang Scrum cho người mới bắt đầu</h2>
+            <p>Tác giả: Học Viện Agile</p>
+            <p>Thể loại: Khoa học - Công nghệ, Kiến thức khoa học</p> 
+            <p>Nhà xuất bản: NXB Thế Giới</p>  
+            <p>Ngày cập nhật: 19/06/2018</p>
+            <p>Giá: <font color="red" size="5">50.000 <sup>VND</sup></font></p>
+            <button 
+                type="button" title="Chọn Mua" class="btn btn-danger" onclick="DatHang();"> 
+                <span style="font-size:20px"> Mua Hàng </span> 
+            </button>
+            <br/><br/>
+            <p>
+                Đây là cuốn sách về Scrum đầu tiên do người Việt biên soạn. Sau nhiều năm hoà nhập cùng cộng đồng Agile thế giới trong việc học hỏi, ứng dụng, và xây dựng cộng đồng Agile tại Việt Nam, cuốn sách này đánh dấu một bước tiến mới trong việc phát triển một hệ sinh thái Agile mạnh tại Việt Nam.
+
+Kể từ hội nghị tại Utah, Hoa Kì, năm 2001, khai sinh ra đường lối Phát triển Phần mềm Linh hoạt (Agile Software Development) mà chúng ta gọi tắt là Agile, chúng ta đã chứng kiến những thay đổi lớn lao của thế giới phần mềm nói riêng, và thế giới công nghệ nói chung. Đó là thời gian đủ để những Google, iPhone, iPad, Android, Facebook, Twitter… ra đời và đảo lộn trật tự thế giới.
+
+Agile, từ chỗ là một trào lưu phản kháng trong đợt khủng hoảng các phương pháp phát triển phần mềm, đã trở thành “tiêu chuẩn hờ” cho việc phát triển phần mềm, lan sang phát triển sản phẩm công nghệ nói chung, và tiện thể loang cả sang những địa hạt mà những người kí vào bản Tuyên ngôn Agile năm 2001 không thể ngờ tới: Marketing, giáo dục, quản trị, trong gia đình, nông nghiệp hay thậm chí cả trong … nhà thờ.
+
+Nhóm tác giả <b>Học viện Agile</b> hân hạnh đồng hành cùng các bạn học Agile, thực hành Agile để kiến tạo những giá trị mới, tạo những đổi thay tích cực. Thông qua việc biên soạn cuốn sách <b>Cẩm nang Scrum cho người mới bắt đầu</b> này, chúng tôi mong muốn mang đến cho bạn cơ hội học hỏi, thực hành Agile với chất lượng cao và hiệu quả tốt. Dù rất nỗ lực, cuốn sách chắc chắn không khỏi mắc phạm phải những thiếu sót. Chúng tôi luôn mong chờ những phản hồi của bạn để cải tiến liên tục tài liệu này tại thư điện tử contact@hocvienagile.com.
+                
+                <br/>My Book trân trọng giới thiệu!
+            </p>
+            <hr>
+          </div>
+        </div>
+      </div>
+         <footer class="col-sm-12 modal-content" style="width:1170px; margin: 10px auto;">
+            <div class="col-sm-12" id="line"></div>
+             <div class="col-sm-4">
+               <p class="textfooter">THÔNG TIN LIÊN HỆ</p>
+               <p>Công ty TNHH My Life</p>
+               <p>06 Lê Lợi, phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+               <p>Tel: 0935027834</p>
+               <p>Email:support@mylife.vn</p>
+             </div>
+             <div class="col-sm-3">
+               <p class="textfooter">ĐỐI TÁC VẬN CHUYỂN</p>
+               <img src="../IMG/vn-post.jpg">
+               <br/><br/>
+               <img src="../IMG/dhl.jpg">
+             </div>
+             <div class="col-sm-2">
+               <p class="textfooter">ĐỐI TÁC BÁN HÀNG</p>
+               <img src="../IMG/lazada.jpg">
+               <br/><br/>
+               <img src="../IMG/shopee.jpg">
+               <br/><br/>
+               <img src="../IMG/amazon.jpg">
+             </div>
+             <div class="col-sm-3">
+                 <br/><br/>
+               <img src="../IMG/logo_so_cong_thuong.png">
+             </div>
+          </footer>
+    </div> 
+    <script language="JavaScript" src="../JS/jquery.min.js"> </script>
+    <script language="JavaScript" src="../JS/Menu.js"> </script>    
+</body>
+</html>

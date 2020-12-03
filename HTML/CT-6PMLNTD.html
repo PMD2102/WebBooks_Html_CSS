@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOK</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fontmenu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/detail.css">
+    <style>
+		*{margin:0px; padding:0px;}
+		
+	</style>
+</head>
+<body onload = "JS()"> 
+	<div class="container-fluid" style="width:1200px;">
+        <header style="height:180px;"> 
+            <div class="col-sm-3">
+                <a href="Home.html"><img src="../IMG/logo.png" class="logo"></a>          
+            </div>
+            <div class="col-sm-6" style="margin-top:40px; height:86px">
+                <form>
+                    <input type="text" name="" placeholder="Sách cần tìm...">
+                    <input type="submit" name="" value="Seacrh">
+                </form>    
+            </div> 
+            <div class="col-sm-3" style="height:126px;">  
+                <a href="./FormDN.html" class="btn btn-primary" style="margin-top: 50px">Đăng nhập</a>
+                <a href="./FormDK.html"class="btn btn-primary" style="margin-top: 50px">Đăng Kí</a>        
+            </div>
+            <div class="col-sm-12" style="height:40px; margin-left: 150px;">
+            	<ul id="menu"> 
+                <li> <a href="Home.html"> TRANG CHỦ </a> </li>
+                <li> <a href="./GioiThieu.html"> GIỚI THIỆU </a> </li>
+                <li> <a href="./ThanhToan.html"> HÌNH THỨC THANH TOÁN </a></li>
+                <li> <a href="./LienHe.html"> LIÊN HỆ </a> </li>
+                <li> <a href="./PhuongThucGH.html"> PHƯƠNG THỨC GIAO HÀNG </a> </li>
+              </ul>
+            </div>
+       </header>
+       <div>
+         <section style="font-family: 'Dosis', sans-serif; margin-top:10px" class="col-sm-3 modal-content">
+            <div class="menu">
+              <div id="menu-container">
+                <ul class="menu-list accordion">
+                  <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="VHXH.html">Văn hóa-Xã hội</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KHXH.html">+ Khoa học xã hội</a></li>
+                    <li><a class="head" href="GD.html">+ Giáo dục</a></li>
+                    <li><a class="head" href="CTPL.html">+ Chính trị-Pháp luật</a></li>
+                  </ul>
+                  <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Nhân vật-Sự kiện</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NV.html">+ Nhân vật</a></li>
+                    <li><a class="head" href="SK.html">+ Sự kiện</a></li>
+                  </ul>
+                  <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Khoa học-Công nghệ</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KTCN.html">+ Kỹ thuật-Công nghệ</a></li>
+                    <li><a class="head" href="KTKH.html">+ Kiến thức khoa học</a></li>
+                  </ul>
+                  <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn học</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="TTV.html">+ Thơ-Tản văn</a></li>
+                    <li><a class="head" href="TDTT.html">+ Truyện dài-Tiểu thuyết</a></li>
+                    <li><a class="head" href="KH.html">+ Kiếm hiệp</a></li>
+                    <li><a class="head" href="TN.html">+ Truyện ngắn</a></li>
+                  </ul>
+                  <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Kỹ năng</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NTS.html">+ Nghệ thuật sống</a></li>
+                    <li><a class="head" href="KNLV.html">+ Kỹ năng làm việc</a></li>
+                    <li><a class="head" href="KNS.html">+ Kỹ năng sống</a></li>
+                    <li><a class="head" href="HN.html">+ Hướng nghiệp</a></li>
+                  </ul>
+                </ul>    
+              </div>
+            </div>
+         </section>
+         <div class="col-sm-9 modal-content" style="margin-top:10px;">
+          <h1 id="chitiet"> Chi Tiết Sách </h1>
+          <hr style="margin-top: 48px;">
+          <br/>
+          <div class="col-sm-4">
+            <img src="../IMG/BOOK/Khoa học-Công nghệ/kien thuc khoa hoc/6 phat minh lam nen thoi dai.jpg" class="imgbook">
+          </div>
+          <div class="col-sm-8">
+            <h2 style="font-weight: bold;">6 phát minh làm nên thời đại</h2>
+            <p>Tác giả: Steven Johnson</p>
+            <p>Thể loại: Khoa học - Công nghệ, Kiến thức khoa học</p> 
+            <p>Nhà xuất bản: NXB Thế Giới</p>  
+            <p>Ngày cập nhật: 15/05/2018</p>
+            <p>Giá: <font color="red" size="5">50.000 <sup>VND</sup></font></p>
+            <button 
+                type="button" title="Chọn Mua" class="btn btn-danger" onclick="DatHang();"> 
+                <span style="font-size:20px"> Mua Hàng </span> 
+            </button>
+            <br/><br/>
+            <p>
+                Steven Johnson đích thực là chuyên gia bậc thầy của lịch sử ý tưởng. Trong cuốn sách này, ông chỉ tập trung vào sáu công nghệ và khám phá các phân nhánh của chúng, cả mặt tốt lẫn không tốt. Ông đã tạo ra biểu trưng hình ảnh chim ruồi cho các loại hình phát minh mà mình quan tâm: sự đồng tiến hóa của hoa và côn trùng – kẻ không mời từ một trật tự sáng tạo khác. Cuốn sách này là tập hợp đầy đủ những “phát minh chim ruồi” hoàn toàn bất ngờ. Sáu chủ đề được đưa ra là: Thủy tinh, Làm lạnh, Âm thanh, Làm sạch, Thời gian, Ánh sáng.
+
+                Có những câu chuyện nhà phát minh không nhận ra phạm vi thực sự khám phá của mình, như Édouard-Léon Scott de Martinville, người vào năm 1850 đã phát minh ra máy ký âm nhưng không có thiết bị phát lại. Ông tin rằng, ngày nào đó chúng ta sẽ giải mật chúng như cách đọc nốt nhạc. Máy quét sóng siêu âm được phát triển dựa trên thiết bị tìm kiếm tàu đắm Titanic. Nhiều năm sau, công nghệ lại kết hợp với chính sách một con của Trung Quốc để tạo thành sự mất cân bằng giới tính khốc liệt trong xã hội trọng nam. Các chủ đề và hướng tiếp cận của Johnson được lựa chọn đều gây sự khâm phục đáng kinh ngạc. Một trong số đó là chuyện vào thập niên 1850, 1860, cả thành phố Chicago được nâng lên bằng kích vít để đặt hệ thống ống cống ngầm.
+                
+                Phương pháp mạnh bạo này vô cùng cần thiết vì Chicago rất phẳng; không có độ dốc tự nhiên để thoát nước và thành phố, trung tâm buôn bán thịt náo nhiệt miền trung tây, điều táo bạo cần thiết để giải vây thành phố khỏi rác thải độc hại. Chicago một lần nữa lại xuất hiện ở chương “Làm lạnh”: đó là đường ô tô ray cho xe đông lạnh chờ thịt từ đồng bằng đi khắp nước Mỹ. Johnson nhấn mạnh rằng nhiều phát minh không phải là kết quả của “phút Eureka” mà là sự chín muồi của một tiến trình dài bao gồm một mạng lưới các nhà phát minh và doanh nghiệp. Ông đã cố xoay xở và cuối cùng đã tìm ra cách định nghĩa khoảnh khắc này. Dữ liệu số được truyền dẫn lần đầu tiên năm 1943 qua một đường dây mật SIGSALYY được Alan Turing và Phòng thí nghiệm Bell phát triển: Turing là một nhà sáng chế thiên tài.
+                
+                <b>6 phát minh làm nên thời đại</b> là một cuốn sách ngắn, khá dễ đọc, thú vị và đầy thách thức với những điều kỳ diệu mỗi ngày quanh ta.
+                
+                <br/>My Book trân trọng giới thiệu!
+            </p>
+            <hr>
+          </div>
+        </div>
+      </div>
+         <footer class="col-sm-12 modal-content" style="width:1170px; margin: 10px auto;">
+            <div class="col-sm-12" id="line"></div>
+             <div class="col-sm-4">
+               <p class="textfooter">THÔNG TIN LIÊN HỆ</p>
+               <p>Công ty TNHH My Life</p>
+               <p>06 Lê Lợi, phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+               <p>Tel: 0935027834</p>
+               <p>Email:support@mylife.vn</p>
+             </div>
+             <div class="col-sm-3">
+               <p class="textfooter">ĐỐI TÁC VẬN CHUYỂN</p>
+               <img src="../IMG/vn-post.jpg">
+               <br/><br/>
+               <img src="../IMG/dhl.jpg">
+             </div>
+             <div class="col-sm-2">
+               <p class="textfooter">ĐỐI TÁC BÁN HÀNG</p>
+               <img src="../IMG/lazada.jpg">
+               <br/><br/>
+               <img src="../IMG/shopee.jpg">
+               <br/><br/>
+               <img src="../IMG/amazon.jpg">
+             </div>
+             <div class="col-sm-3">
+                 <br/><br/>
+               <img src="../IMG/logo_so_cong_thuong.png">
+             </div>
+          </footer>
+    </div> 
+    <script language="JavaScript" src="../JS/jquery.min.js"> </script>
+    <script language="JavaScript" src="../JS/Menu.js"> </script>    
+</body>
+</html>

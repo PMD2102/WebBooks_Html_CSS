@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOK</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fontmenu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/detail.css">
+    <style>
+		*{margin:0px; padding:0px;}
+		
+	</style>
+</head>
+<body onload = "JS()"> 
+	<div class="container-fluid" style="width:1200px;">
+        <header style="height:180px;"> 
+            <div class="col-sm-3">
+                <a href="Home.html"><img src="../IMG/logo.png" class="logo"></a>          
+            </div>
+            <div class="col-sm-6" style="margin-top:40px; height:86px">
+                <form>
+                    <input type="text" name="" placeholder="Sách cần tìm...">
+                    <input type="submit" name="" value="Seacrh">
+                </form>    
+            </div> 
+            <div class="col-sm-3" style="height:126px;">  
+                <a href="./FormDN.html" class="btn btn-primary" style="margin-top: 50px">Đăng nhập</a>
+                <a href="./FormDK.html"class="btn btn-primary" style="margin-top: 50px">Đăng Kí</a>        
+            </div>
+            <div class="col-sm-12" style="height:40px; margin-left: 150px;">
+            	<ul id="menu"> 
+                <li> <a href="Home.html"> TRANG CHỦ </a> </li>
+                <li> <a href="./GioiThieu.html"> GIỚI THIỆU </a> </li>
+                <li> <a href="./ThanhToan.html"> HÌNH THỨC THANH TOÁN </a></li>
+                <li> <a href="./LienHe.html"> LIÊN HỆ </a> </li>
+                <li> <a href="./PhuongThucGH.html"> PHƯƠNG THỨC GIAO HÀNG </a> </li>
+              </ul>
+            </div>
+       </header>
+       <div>
+         <section style="font-family: 'Dosis', sans-serif; margin-top:10px" class="col-sm-3 modal-content">
+            <div class="menu">
+              <div id="menu-container">
+                <ul class="menu-list accordion">
+                  <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="VHXH.html">Văn hóa-Xã hội</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KHXH.html">+ Khoa học xã hội</a></li>
+                    <li><a class="head" href="GD.html">+ Giáo dục</a></li>
+                    <li><a class="head" href="CTPL.html">+ Chính trị-Pháp luật</a></li>
+                  </ul>
+                  <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Nhân vật-Sự kiện</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NV.html">+ Nhân vật</a></li>
+                    <li><a class="head" href="SK.html">+ Sự kiện</a></li>
+                  </ul>
+                  <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Khoa học-Công nghệ</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KTCN.html">+ Kỹ thuật-Công nghệ</a></li>
+                    <li><a class="head" href="KTKH.html">+ Kiến thức khoa học</a></li>
+                  </ul>
+                  <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn học</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="TTV.html">+ Thơ-Tản văn</a></li>
+                    <li><a class="head" href="TDTT.html">+ Truyện dài-Tiểu thuyết</a></li>
+                    <li><a class="head" href="KH.html">+ Kiếm hiệp</a></li>
+                    <li><a class="head" href="TN.html">+ Truyện ngắn</a></li>
+                  </ul>
+                  <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Kỹ năng</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NTS.html">+ Nghệ thuật sống</a></li>
+                    <li><a class="head" href="KNLV.html">+ Kỹ năng làm việc</a></li>
+                    <li><a class="head" href="KNS.html">+ Kỹ năng sống</a></li>
+                    <li><a class="head" href="HN.html">+ Hướng nghiệp</a></li>
+                  </ul>
+                </ul>    
+              </div>
+            </div>
+         </section>
+         <div class="col-sm-9 modal-content" style="margin-top:10px;">
+          <h1 id="chitiet"> Chi Tiết Sách </h1>
+          <hr style="margin-top: 48px;">
+          <br/>
+          <div class="col-sm-4">
+            <img src="../IMG/BOOK/Văn hóa-Xã hội/Chính trị-Pháp luật/tuong lai cua quyen luc.jpg" class="imgbook">
+          </div>
+          <div class="col-sm-8">
+            <h2 style="font-weight: bold;">Tương lai của quyền lực</h2>
+            <p>Tác giả: Joseph S. Nye Jr.</p>
+            <p>Thể loại: Chính trị - Pháp luật, Văn hóa - Xã hội</p> 
+            <p>Nhà xuất bản: NXB Thông Tin Và Truyền Thông</p>  
+            <p>Ngày cập nhật:  11/09/2018</p>
+            <p>Giá: <font color="red" size="5">50.000 <sup>VND</sup></font></p>
+            <button 
+                type="button" title="Chọn Mua" class="btn btn-danger" onclick="DatHang();"> 
+                <span style="font-size:20px"> Mua Hàng </span> 
+            </button>
+            <br/><br/>
+            <p>
+                ĐỌC SÁCH
+Trong cuốn <b>Tương lai của quyền lực</b>, với lối phân tích gọn gàng chặt chẽ, tác giả đã đưa ra những gợi ý cho việc thảo luận về chủ đề nòng cốt: "Làm thế nào để Hoa Kỳ vẫn giữ được ảnh hưởng tốt đẹp nơi cộng đồng thế giới trong thế kỷ XXI hiện nay?". Ông nhắc nhở rằng trong thời đại Internet được phổ biến rộng rãi ngày nay, vai trò của các cá nhân và tổ chức phi chính phủ NGO, kể cả các nhóm khủng bố - hiện cũng đang nắm giữ một vị thế rất quan trọng trong nền chính trị toàn cầu chứ không phải chỉ là một lĩnh vực duy nhất, chuyên biệt dành riêng cho các chính quyền, dù đó là một siêu cường quốc như nước Mỹ như quan niệm từ xưa đến nay. Và tác giả kết luận rằng: "Nước Mỹ cần phải phát triển một chiến lược về quyền lực thông minh (Smart power strategy) trong sự hợp tác chân thành với các quốc gia khác, chứ không thể cứ ỷ thế vào quyền lực cứng (Hard power) như sức mạnh kinh tế quân sự, để mặc sức tung hoành áp đảo trên trường quốc tế như vẫn áp dụng từ xưa đến nay được nữa".
+</br>
+Trong cuốn sách này, Joseph Nye đưa ra một tổng luận rất dễ đọc, kết quả của hơn hai thập kỷ đầy kiến thức uyên thâm mới mẻ về mặt khái niệm. Chiến lược tự do – hiện thực chủ nghĩa của Nye rất thuyết phục: Mỹ có thể ngăn chặn lại sự suy yếu chính trị và mở rộng sự thịnh vượng kinh tế bằng cách theo sát một chiến lược quyền lực nhỏ không nhằm theo đuổi vị trí siêu việt mà muốn chan hòa với các quốc gia khác.
+</br>
+Đây là một cuốn sách được biên soạn rất công phu. Tác giả đã nêu ra những số liệu, dữ kiện rất chính xác, trung thực mà người đọc nào cũng có thể kiểm chứng. Và những nhận định của giáo sư cũng rất vững vàng, dựa trên cơ sở phân tích tình hình thế giới vô cùng khách quan, với tinh thần nhân bản và sự công tâm của một bậc thức giả từng có rất nhiều đóng góp quan trọng cho ngành khoa học nhân văn hiện đại của nước Mỹ</br>
+                
+                Mời các bạn đón đọc!
+            </p>
+            <hr>
+          </div>
+        </div>
+      </div>
+         <footer class="col-sm-12 modal-content" style="width:1170px; margin: 10px auto;">
+            <div class="col-sm-12" id="line"></div>
+             <div class="col-sm-4">
+               <p class="textfooter">THÔNG TIN LIÊN HỆ</p>
+               <p>Công ty TNHH My Life</p>
+               <p>06 Lê Lợi, phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+               <p>Tel: 0935027834</p>
+               <p>Email:support@mylife.vn</p>
+             </div>
+             <div class="col-sm-3">
+               <p class="textfooter">ĐỐI TÁC VẬN CHUYỂN</p>
+               <img src="../IMG/vn-post.jpg">
+               <br/><br/>
+               <img src="../IMG/dhl.jpg">
+             </div>
+             <div class="col-sm-2">
+               <p class="textfooter">ĐỐI TÁC BÁN HÀNG</p>
+               <img src="../IMG/lazada.jpg">
+               <br/><br/>
+               <img src="../IMG/shopee.jpg">
+               <br/><br/>
+               <img src="../IMG/amazon.jpg">
+             </div>
+             <div class="col-sm-3">
+                 <br/><br/>
+               <img src="../IMG/logo_so_cong_thuong.png">
+             </div>
+          </footer>
+    </div> 
+    <script language="JavaScript" src="../JS/jquery.min.js"> </script>
+    <script language="JavaScript" src="../JS/Menu.js"> </script>    
+</body>
+</html>

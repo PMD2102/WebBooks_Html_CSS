@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOK</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fontmenu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/detail.css">
+    <style>
+		*{margin:0px; padding:0px;}
+		
+	</style>
+</head>
+<body onload = "JS()"> 
+	<div class="container-fluid" style="width:1200px;">
+        <header style="height:180px;"> 
+            <div class="col-sm-3">
+                <a href="Home.html"><img src="../IMG/logo.png" class="logo"></a>          
+            </div>
+            <div class="col-sm-6" style="margin-top:40px; height:86px">
+                <form>
+                    <input type="text" name="" placeholder="Sách cần tìm...">
+                    <input type="submit" name="" value="Seacrh">
+                </form>    
+            </div> 
+            <div class="col-sm-3" style="height:126px;">  
+                <a href="./FormDN.html" class="btn btn-primary" style="margin-top: 50px">Đăng nhập</a>
+                <a href="./FormDK.html"class="btn btn-primary" style="margin-top: 50px">Đăng Kí</a>        
+            </div>
+            <div class="col-sm-12" style="height:40px; margin-left: 150px;">
+            	<ul id="menu"> 
+                <li> <a href="Home.html"> TRANG CHỦ </a> </li>
+                <li> <a href="./GioiThieu.html"> GIỚI THIỆU </a> </li>
+                <li> <a href="./ThanhToan.html"> HÌNH THỨC THANH TOÁN </a></li>
+                <li> <a href="./LienHe.html"> LIÊN HỆ </a> </li>
+                <li> <a href="./PhuongThucGH.html"> PHƯƠNG THỨC GIAO HÀNG </a> </li>
+              </ul>
+            </div>
+       </header>
+       <div>
+         <section style="font-family: 'Dosis', sans-serif; margin-top:10px" class="col-sm-3 modal-content">
+            <div class="menu">
+              <div id="menu-container">
+                <ul class="menu-list accordion">
+                  <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="VHXH.html">Văn hóa-Xã hội</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KHXH.html">+ Khoa học xã hội</a></li>
+                    <li><a class="head" href="GD.html">+ Giáo dục</a></li>
+                    <li><a class="head" href="CTPL.html">+ Chính trị-Pháp luật</a></li>
+                  </ul>
+                  <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Nhân vật-Sự kiện</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NV.html">+ Nhân vật</a></li>
+                    <li><a class="head" href="SK.html">+ Sự kiện</a></li>
+                  </ul>
+                  <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Khoa học-Công nghệ</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KTCN.html">+ Kỹ thuật-Công nghệ</a></li>
+                    <li><a class="head" href="KTKH.html">+ Kiến thức khoa học</a></li>
+                  </ul>
+                  <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn học</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="TTV.html">+ Thơ-Tản văn</a></li>
+                    <li><a class="head" href="TDTT.html">+ Truyện dài-Tiểu thuyết</a></li>
+                    <li><a class="head" href="KH.html">+ Kiếm hiệp</a></li>
+                    <li><a class="head" href="TN.html">+ Truyện ngắn</a></li>
+                  </ul>
+                  <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Kỹ năng</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NTS.html">+ Nghệ thuật sống</a></li>
+                    <li><a class="head" href="KNLV.html">+ Kỹ năng làm việc</a></li>
+                    <li><a class="head" href="KNS.html">+ Kỹ năng sống</a></li>
+                    <li><a class="head" href="HN.html">+ Hướng nghiệp</a></li>
+                  </ul>
+                </ul>    
+              </div>
+            </div>
+         </section>
+         <div class="col-sm-9 modal-content" style="margin-top:10px;">
+          <h1 id="chitiet"> Chi Tiết Sách </h1>
+          <hr style="margin-top: 48px;">
+          <br/>
+          <div class="col-sm-4">
+            <img src="../IMG/BOOK/Nhân vật-Sự kiện/Su kien/giot mau sau cung.jpg" class="imgbook">
+          </div>
+          <div class="col-sm-8">
+            <h2 style="font-weight: bold;">Giọt máu sau cùng</h2>
+            <p>Tác giả: Phan Trần Trúc</p>
+            <p>Thể loại: Nhân vật - Sự kiện, Sự kiện</p> 
+            <p>Nhà xuất bản: NXB Hồng Đức</p>  
+            <p>Ngày cập nhật: 23/03/2015</p>
+            <p>Giá: <font color="red" size="5">50.000 <sup>VND</sup></font></p>
+            <button 
+                type="button" title="Chọn Mua" class="btn btn-danger" onclick="DatHang();"> 
+                <span style="font-size:20px"> Mua Hàng </span> 
+            </button>
+            <br/><br/>
+            <p>
+                Tóm tắt sách <b>Giọt máu sau cùng:</b><br/>
+
+Lịch sử văn hóa của một dân tộc không phải của riêng cá nhân nào, chính vì vậy, việc bảo tồn, gìn giữ và phát triển lịch sử văn hóa cũng không phải riêng một người nào có thể gánh vác được, nó thuộc về nhận thức chung của toàn xã hội và vai trò của từng nhân tố trong mỗi chặng đường lịch sử. Lịch sử là một khoa học. Lịch sử không phải là việc thống kê sự kiện một cách khô khan rời rạc. Bởi mỗi sự kiện trong tiến trình đó đều có mối liên kết chặt chẽ với nhau bằng sợi dây vô hình xuyên suốt không gian và thời gian tạo nên lịch sử của một dân tộc.
+
+Dân tộc Việt Nam trải hơn một nghìn năm Bắc thuộc, gần trăm năm dưới ách cai trị của thực dân, đế quốc, nhưng con cháu bà Trưng, bà Triệu, Lý Thường Kiệt, Trần Hưng Đạo, Lê Lợi, Quang Trung... vẫn kiên trì bền chí, tin tưởng ở quá khứ hào hùng, không ngừng tranh đấu hướng tới tương lai rộng mở vì độc lập tự do của đất nước.
+
+Một dân tộc, một quốc gia muốn trường tồn và phát triển, ngoài việc đẩy mạnh phát triển cơ sở hạ tầng, khoa học kỹ thuật, điều quan trọng hơn nữa là phải có một nền tảng giáo dục vững chắc. Trong đó, giáo dục về lịch sử và lòng tự hào dân tộc là cần thiết để ghi khắc trong tâm trí các thế hệ, đặc biệt là tầng lớp thanh niên, ý thức về nguồn gốc dân tộc, truyền thống văn hóa và nội lực quốc gia, đồng thời giúp định hình góc nhìn thấu đáo về vai tròcủa từng giai đoạn, triều đại và nhân vật - dù gây tranh cãi - tạo nên lịch sử đó.
+
+Chính vì những giá trị to lớn đó, vấn đề học tập, tìm hiểu lịch sử nước nhà hiện đang là mối quan tâm hàng đầu của Nhà nước và toàn xã hội. Hội Khoa học Lịch sử Việt Nam, Quỹ Phát triển Sử học Việt Nam, Tạp chí Xưa và Nay... và rất nhiều những tổ chức khác đã và đang kiên trì con đường thúc đẩy sự phát triển của nền khoa học lịch sử quốc gia, phổ biến tri thức lịch sử, góp phần giáo dục truyền thống văn hóa dân tộc tới toàn xã hội.
+
+Đồng hành với mối quan tâm của toàn xã hội, Công ty Cổ phần Sách Alpha - một doanh nghiệp hoạt động trong lĩnh vực xuất bản, với tôn chỉ “Tri thức là sức mạnh” - đặc biệt quan tâm tới việc góp phần nâng cao hiểu biết của người dân về truyền thống văn hóa lịch sử đất nước.
+            </p>
+            <hr>
+          </div>
+        </div>
+      </div>
+         <footer class="col-sm-12 modal-content" style="width:1170px; margin: 10px auto;">
+            <div class="col-sm-12" id="line"></div>
+             <div class="col-sm-4">
+               <p class="textfooter">THÔNG TIN LIÊN HỆ</p>
+               <p>Công ty TNHH My Life</p>
+               <p>06 Lê Lợi, phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+               <p>Tel: 0935027834</p>
+               <p>Email:support@mylife.vn</p>
+             </div>
+             <div class="col-sm-3">
+               <p class="textfooter">ĐỐI TÁC VẬN CHUYỂN</p>
+               <img src="../IMG/vn-post.jpg">
+               <br/><br/>
+               <img src="../IMG/dhl.jpg">
+             </div>
+             <div class="col-sm-2">
+               <p class="textfooter">ĐỐI TÁC BÁN HÀNG</p>
+               <img src="../IMG/lazada.jpg">
+               <br/><br/>
+               <img src="../IMG/shopee.jpg">
+               <br/><br/>
+               <img src="../IMG/amazon.jpg">
+             </div>
+             <div class="col-sm-3">
+                 <br/><br/>
+               <img src="../IMG/logo_so_cong_thuong.png">
+             </div>
+          </footer>
+    </div> 
+    <script language="JavaScript" src="../JS/jquery.min.js"> </script>
+    <script language="JavaScript" src="../JS/Menu.js"> </script>    
+</body>
+</html>

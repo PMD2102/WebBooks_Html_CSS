@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fontmenu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <style>
+		*{margin:0px; padding:0px;}
+		
+	</style>
+</head>
+<body onload = "JS()"> 
+	<div class="container-fluid" style="width:1200px;">
+        <header style="height:180px;"> 
+            <div class="col-sm-3">
+                <a href="Home.html"><img src="../IMG/logo.png" class="logo"></a>          
+            </div>
+            <div class="col-sm-6" style="margin-top:40px; height:86px">
+                <form>
+                    <input type="text" name="" placeholder="Sách cần tìm...">
+                    <input type="submit" name="" value="Seacrh">
+                </form>    
+            </div> 
+            <div class="col-sm-3" style="height:126px;">  
+                <a href="./FormDN.html" class="btn btn-primary" style="margin-top: 50px">Đăng nhập</a>
+                <a href="./FormDK.html"class="btn btn-primary" style="margin-top: 50px">Đăng Kí</a>        
+            </div>
+            <div class="col-sm-12" style="height:40px; margin-left: 150px;">
+            	<ul id="menu"> 
+                <li> <a href="Home.html"> TRANG CHỦ </a> </li>
+                <li> <a href="./GioiThieu.html"> GIỚI THIỆU </a> </li>
+                <li> <a href="./ThanhToan.html"> HÌNH THỨC THANH TOÁN </a></li>
+                <li> <a href="./LienHe.html"> LIÊN HỆ </a> </li>
+                <li> <a href="./PhuongThucGH.html"> PHƯƠNG THỨC GIAO HÀNG </a> </li>
+              </ul>
+            </div>
+    	 </header>
+         <section style="font-family: 'Dosis', sans-serif; height: 800px; margin-top:10px" class="col-sm-3 modal-content">
+            <div class="menu">
+              <div id="menu-container">
+                <ul class="menu-list accordion">
+                  <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn hóa-Xã hội</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KHXH.html">+ Khoa học xã hội</a></li>
+                    <li><a class="head" href="GD.html">+ Giáo dục</a></li>
+                    <li><a class="head" href="CTPL.html">+ Chính trị-Pháp luật</a></li>
+                  </ul>
+                  <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Nhân vật-Sự kiện</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NV.html">+ Nhân vật</a></li>
+                    <li><a class="head" href="SK.html">+ Sự kiện</a></li>
+                  </ul>
+                  <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Khoa học-Công nghệ</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KTCN.html">+ Kỹ thuật-Công nghệ</a></li>
+                    <li><a class="head" href="KTKH.html">+ Kiến thức khoa học</a></li>
+                  </ul>
+                  <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn học</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="TTV.html">+ Thơ-Tản văn</a></li>
+                    <li><a class="head" href="TDTT.html">+ Truyện dài-Tiểu thuyết</a></li>
+                    <li><a class="head" href="KH.html">+ Kiếm hiệp</a></li>
+                    <li><a class="head" href="TN.html">+ Truyện ngắn</a></li>
+                  </ul>
+                  <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Kỹ năng</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NTS.html">+ Nghệ thuật sống</a></li>
+                    <li><a class="head" href="KNLV.html">+ Kỹ năng làm việc</a></li>
+                    <li><a class="head" href="KNS.html">+ Kỹ năng sống</a></li>
+                    <li><a class="head" href="HN.html">+ Hướng nghiệp</a></li>
+                  </ul>
+                </ul>    
+              </div>
+            </div>
+         </section>
+         <div class="col-sm-9 modal-content" style="margin-top:10px; height: 800px">
+         	<div class="col-sm-9"><h2 class="test">*Hướng nghiệp*</h2></div>
+                <div class="col-sm-12">
+                      <div class="col-sm-3">
+                        <a href="CT-HNTTD4.0.html"><img src="../IMG/Kỹ năng/huong nghiep/huong nghiep trong thoi dai 4.0.jpg" width="200" height="292"></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="CT-MGTG,BBDD.html"><img src="../IMG/Kỹ năng/huong nghiep/mot goc the gioi, bon be dai duong.jpg" width="200" height="292"></a>
+                      </div> 
+                      <div class="col-sm-3">
+                        <a href="CT-SMCTQ.html"><img src="../IMG/Kỹ năng/huong nghiep/suc manh cua thoi quen.jpg" width="200" height="292"></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="CT-TDSN,TDCD.html"><img src="../IMG/Kỹ năng/huong nghiep/thay doi suy nghi, thay doi cuoc doi.jpg" width="200" height="292"></a>
+                      </div>       
+                </div>
+                <div class="col-sm-12">
+                	<p class="test">*Đang cập nhật..</p>
+                </div>             
+            </div>
+         </div>
+         <footer class="col-sm-12 modal-content" style="width:1170px; margin: 10px auto; left: 90px;">
+          <div class="col-sm-12" id="line"></div>
+           <div class="col-sm-4">
+             <p class="textfooter">THÔNG TIN LIÊN HỆ</p>
+             <p>Công ty TNHH My Life</p>
+             <p>06 Lê Lợi, phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+             <p>Tel: 0935027834</p>
+             <p>Email:support@mylife.vn</p>
+           </div>
+           <div class="col-sm-3">
+             <p class="textfooter">ĐỐI TÁC VẬN CHUYỂN</p>
+             <img src="../IMG/vn-post.jpg">
+             <br/><br/>
+             <img src="../IMG/dhl.jpg">
+           </div>
+           <div class="col-sm-2">
+             <p class="textfooter">ĐỐI TÁC BÁN HÀNG</p>
+             <img src="../IMG/lazada.jpg">
+             <br/><br/>
+             <img src="../IMG/shopee.jpg">
+             <br/><br/>
+             <img src="../IMG/amazon.jpg">
+           </div>
+           <div class="col-sm-3">
+               <br/><br/>
+             <img src="../IMG/logo_so_cong_thuong.png">
+           </div>
+        </footer>
+    </div> 
+    <script language="JavaScript" src="../JS/jquery.min.js"> </script>
+    <script language="JavaScript" src="../JS/Menu.js"> </script>    
+</body>
+</html>

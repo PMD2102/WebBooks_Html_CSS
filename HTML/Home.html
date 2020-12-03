@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOK</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fontmenu.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+    <style>
+		*{margin:0px; padding:0px;}
+		
+	</style>
+</head>
+<body onload = "JS()"> 
+	<div class="container-fluid" style="width:1200px;">
+        <header style="height:180px;"> 
+            <div class="col-sm-3">
+                <a href="Home.html"><img src="../IMG/logo.png" class="logo"></a>          
+            </div>
+            <div class="col-sm-6" style="margin-top:40px; height:86px">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Sách cần tìm...">
+                    <input type="submit" name="" value="Seacrh">
+                </form>    
+            </div> 
+            <div class="col-sm-3" style="height:126px;">  
+                <a href="DangNhap.html" class="btn btn-primary" style="margin-top: 50px">Đăng nhập</a>
+                <a href="DangKy.html"class="btn btn-primary" style="margin-top: 50px">Đăng Kí</a>        
+            </div>
+            <div class="col-sm-12" style="height:40px; margin-left: 150px;">
+            	<ul id="menu"> 
+                <li> <a href="Home.html"> TRANG CHỦ </a> </li>
+                <li> <a href="./GioiThieu.html"> GIỚI THIỆU </a> </li>
+                <li> <a href="./ThanhToan.html"> HÌNH THỨC THANH TOÁN </a></li>
+                <li> <a href="./LienHe.html"> LIÊN HỆ </a> </li>
+                <li> <a href="./PhuongThucGH.html"> PHƯƠNG THỨC GIAO HÀNG </a> </li>
+              </ul>
+            </div>
+    	 </header>
+         <section style="font-family: 'Dosis', sans-serif; height: 1320px; margin-top:10px" class="col-sm-3 modal-content">
+            <div class="menu">
+              <div id="menu-container">
+                <ul class="menu-list accordion">
+                  <li id="nav1" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="VHXH.html">Văn hóa-Xã hội</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KHXH.html">+ Khoa học xã hội</a></li>
+                    <li><a class="head" href="GD.html">+ Giáo dục</a></li>
+                    <li><a class="head" href="CTPL.html">+ Chính trị-Pháp luật</a></li>
+                  </ul>
+                  <li id="nav2" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Nhân vật-Sự kiện</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NV.html">+ Nhân vật</a></li>
+                    <li><a class="head" href="SK.html">+ Sự kiện</a></li>
+                  </ul>
+                  <li id="nav3" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Khoa học-Công nghệ</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="KTCN.html">+ Kỹ thuật-Công nghệ</a></li>
+                    <li><a class="head" href="KTKH.html">+ Kiến thức khoa học</a></li>
+                  </ul>
+                  <li id="nav4" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Văn học</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="TTV.html">+ Thơ-Tản văn</a></li>
+                    <li><a class="head" href="TDTT.html">+ Truyện dài-Tiểu thuyết</a></li>
+                    <li><a class="head" href="KH.html">+ Kiếm hiệp</a></li>
+                    <li><a class="head" href="TN.html">+ Truyện ngắn</a></li>
+                  </ul>
+                  <li id="nav5" class="toggle accordion-toggle">
+                    <span class="icon-plus"></span>
+                    <a class="menu-link" href="#">Kỹ năng</a>
+                  </li>
+                  <ul class="menu-submenu accordion-content">
+                    <li><a class="head" href="NTS.html">+ Nghệ thuật sống</a></li>
+                    <li><a class="head" href="KNLV.html">+ Kỹ năng làm việc</a></li>
+                    <li><a class="head" href="KNS.html">+ Kỹ năng sống</a></li>
+                    <li><a class="head" href="HN.html">+ Hướng nghiệp</a></li>
+                  </ul>
+                </ul>    
+              </div>
+            </div>
+         </section>
+         <div class="col-sm-9 modal-content" style="margin-top:10px; height: 1320px;">
+         <table border="0" id="mytable">
+           <tr>
+            <td colspan="4"><div class="col-sm-9"><h2 class="test">*Sách mới*</h2></div></td> 
+           </tr>
+            <div class="col-sm-12"> 
+                <tr>      
+                    <div class="col-sm-3">
+                      <td>
+                      <a href="CT-5BGMUM.html"><img src="../IMG/BOOK/Văn hóa-Xã hội/Khoa học xã hội/5 buoc giai ma giac mo.jpg" width="200" height="292" alt="a1"></a><br/>
+                      <p style="font-size:14px; text-align: center;">5 BƯỚC <br/>GIẢI MÃ GIẤC MƠ</p>
+                      </td>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                      <td>
+                      <a href="CT-NTTK.html"><img src="../IMG/BOOK/Văn hóa-Xã hội/Chính trị-Pháp luật/nguoi tu the ky.jpg" width="200" height="292" alt="a2"></a>
+                      <p style="font-size:14px; text-align: center;">NGƯỜI TỪ THẾ KỶ</p>
+                      </td>
+                    </div> 
+                   
+                    <div class="col-sm-3">
+                      <td>
+                      <a href="CT-DGDXR.html"><img src="../IMG/BOOK/Văn hóa-Xã hội/Khoa học xã hội/dieu gi da xay ra.jpg" width="200" height="292" alt="a3"></a>
+                      <p style="font-size:14px; text-align: center;">ĐIỀU GÌ ĐÃ XẢY RA</p>
+                      </td>
+                    </div>  
+  
+                    <div class="col-sm-3">
+                      <td>
+                      <a href="CT-NCGTT.html"><img src="../IMG/BOOK/Văn học/tho tan van/nguoi con gai ta thuong.jpg" width="200" height="279" alt="b3"></a>
+                      <p style="font-size:14px; text-align: center;">NGƯỜI CON GÁI TA THƯƠNG</p>
+                      </td>
+                    </div>
+                  </tr>    
+            </div>       
+
+            <div class="col-sm-12" style="margin-top:20px">
+              <tr>
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-DH0D.html"><img src="../IMG/BOOK/Văn hóa-Xã hội/Giáo dục/du hoc 0 dong.jpg" width="200" height="292" alt="b1"></a>
+                    <p style="font-size:14px; text-align: center;">DU HỌC 0 ĐỒNG</p>
+                    </td>
+                  </div>
+              
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-KMGCL.html"><img src="../IMG/BOOK/Nhân vật-Sự kiện/Nhan vat/khong minh gia cat luong.jpg" width="200" height="292" alt="b2"></a>
+                    <p style="font-size:14px; text-align: center;">KHỔNG MINH <br/>GIA CÁT LƯỢNG</p>
+                    </td>
+                  </div> 
+              
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-DNVNQCD.html"><img src="../IMG/BOOK/Nhân vật-Sự kiện/Su kien/dat nuoc viet nam qua cac doi.jpg" width="200" height="279" alt="b3"></a>
+                    <p style="font-size:14px; text-align: center;">ĐẤT NƯỚC VIỆT NAM<br/>QUA CÁC ĐỜI</p>
+                    </td>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-HSCD.html"><img src="../IMG/BOOK/Văn hóa-Xã hội/Giáo dục/hoc sao cho dung.jpg" width="200" height="279" alt="b3"></a>
+                    <p style="font-size:14px; text-align: center;">HỌC SAO CHO ĐÚNG</p>
+                    </td>
+                  </div>    
+              </tr>     
+            </div>
+            <tr>
+              <td colspan="4"><div class="col-sm-9"><h2 class="test">*Sách bán chạy*</h2></div></td> 
+            </tr>  
+            <div class="col-sm-12" style="margin-top:20px">
+                <tr>
+                  
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-CCMCNL3.html"><img src="../IMG/BOOK/Khoa học-Công nghệ/ki thuat cong nghe/cuoc cach mang cong nghiep lan III.jpg" width="200" height="292" alt="c1"></a>
+                    <p style="font-size:14px; text-align: center;">CUỘC CÁCH MẠNG<br/> CÔNG NGHIỆP LẦN III</p>
+                    </td>
+                  </div>
+                
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-DCVL.html"><img src="../IMG/BOOK/Khoa học-Công nghệ/kien thuc khoa hoc/dao cua vat ly.jpg" width="200" height="292" alt="c2"></a>
+                    <p style="font-size:14px; text-align: center;">ĐẠO CỦA VẬT LÝ</p>
+                    </td>
+                  </div> 
+                
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-KNGTHQ.html"><img src="../IMG/BOOK/Kỹ năng/ky nang lam viec/ky nang giao tiep hieu qua.jpg" width="200" height="292" alt="c3"></a>
+                    <p style="font-size:14px; text-align: center;">KỸ NĂNG <br/>GIAO TIẾP HIỆU QUẢ</p>
+                    </td>
+                  </div> 
+
+                  <div class="col-sm-3">
+                    <td>
+                  	<a href="CT-CNCBD.html"><img src="../IMG/BOOK/Văn học/truyen ngan/chuyen nhu chua bat dau.jpg" width="200" height="279" alt="b3"></a>
+                    <p style="font-size:14px; text-align: center;">CHUYỆN NHƯ CHƯA BẮT ĐẦU</p>
+                    </td>
+                  </div>  
+                </tr>   
+            </div>
+            <div class="col-sm-12" style="padding-bottom:20px;"></div>
+            </table>
+         </div>
+         <footer class="col-sm-12 modal-content" style="width:1170px; margin: 10px auto;">
+            <div class="col-sm-12" id="line"></div>
+             <div class="col-sm-4">
+               <p class="textfooter">THÔNG TIN LIÊN HỆ</p>
+               <p>Công ty TNHH My Life</p>
+               <p>06 Lê Lợi, phường 4, Quận Gò Vấp, TP. Hồ Chí Minh</p>
+               <p>Tel: 0935027834</p>
+               <p>Email:support@mylife.vn</p>
+             </div>
+             <div class="col-sm-3">
+               <p class="textfooter">ĐỐI TÁC VẬN CHUYỂN</p>
+               <img src="../IMG/vn-post.jpg">
+               <br/><br/>
+               <img src="../IMG/dhl.jpg">
+             </div>
+             <div class="col-sm-2">
+               <p class="textfooter">ĐỐI TÁC BÁN HÀNG</p>
+               <img src="../IMG/lazada.jpg">
+               <br/><br/>
+               <img src="../IMG/shopee.jpg">
+               <br/><br/>
+               <img src="../IMG/amazon.jpg">
+             </div>
+             <div class="col-sm-3">
+                 <br/><br/>
+               <img src="../IMG/logo_so_cong_thuong.png">
+             </div>
+          </footer>
+    </div> 
+    <script language="JavaScript" src="../JS/jquery.min.js"> </script>
+    <script language="JavaScript" src="../JS/Menu.js"> </script> 
+    <script language="JavaScript" src="../JS/Ajquery.min.js"> </script>
+    <script>
+ $(document).ready(function(){
+ $("#search").keyup(function(){
+  _this = this;
+ $.each($("#mytable tbody td"), function() {
+ if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+  $(this).hide();
+ else
+  $(this).show();
+ });
+ });
+});
+</script>
+</body>
+</html>
